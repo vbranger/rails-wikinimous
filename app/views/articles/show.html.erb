@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1><%= @article.title %> <%= link_to "Edit", edit_article_path %> <%= link_to "Delete", 
+      article_path(@article),
+      method: "delete",
+      data: { confirm: "Are you sure?" } %></h1>
+      <hr>
+      <p><%= @article.content %></p>
+    </div>
+  </div>
+</div>
